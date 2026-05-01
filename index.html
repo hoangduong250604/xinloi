@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lời Xin Lỗi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Nhạc nền -->
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Nút điều khiển nhạc -->
+    <div class="music-control">
+        <button id="musicToggle" class="music-btn">🔊 Tắt nhạc</button>
+    </div>
+
+    <div class="container">
+        <!-- Tiêu đề -->
+        <h1 class="title">✨ Thư tình bí mật ✨</h1>
+        
+        <!-- Thư được đóng -->
+        <div class="letter-container">
+            <div id="letterClosed" class="letter-closed">
+                <div class="letter-icon">💌</div>
+                <p class="letter-text">Bấm vào để mở thư...</p>
+                <button id="openButton" class="open-btn">Mở Thư</button>
+            </div>
+
+            <!-- Thư được mở -->
+            <div id="letterOpen" class="letter-open" style="display: none;">
+                <div class="letter-header">
+                    <h2>Cho người anh yêu thương,</h2>
+                </div>
+                
+                <div class="letter-content">
+                    <div class="content-placeholder">
+                        <p id="letterContent">"Hôm nay cũng đã gần 5 tháng mình không gặp nhau, không còn ở bên nhau nữa, không biết em đã nguôn giận anh chút nào chưa, không biết em có từng nhớ về anh lần nào không, nếu có anh hy vọng là những điều tốt đẹp của tụi mình. Anh biết lỗi của mình rất lớn, anh biết em cũng có giới hạn của em, nhưng những lời nói trước đó của anh đã vượt qua giới hạn đó nhiều lần. Anh cũng hiểu bây giờ anh gần như đã bít cửa rồi trong mắt gia đình em, bạn bè em anh rất tệ. Nhưng anh vẫn thật sự rất muốn được sửa chữa lỗi lầm của mình, vì người đó là em.
+<br>
+Anh còn cơ hội không, anh sẽ cố gắng hêt sức để nắm bắt điều đó.
+<br>
+Anh có thể mời em đi ăn tối không, anh không chắc nếu được gặp thì sẽ có thể làm lành như trước, nhưng anh chắc chắn mình đã tốt hơn trước nhiều, thật sự em đã là bài học rất lớn cho anh nhưng anh lại rất muốn em là tương lai của anh.
+<br>
+Em đồng ý không, anh sẽ chờ, hoặc nếu không cũng không sao, anh thề sẽ không xuất hiện trong đời em nữa, sẽ không có thêm 1 tin gì từ anh khiến em bực bội nữa, anh sẽ chỉ mong tương lai mình còn có thể gặp lại. Anh tôn trọng quyết định của em."</p>
+                    </div>
+                    
+                    <!-- Ảnh -->
+                    <img src="pic.jpg" alt="Ảnh" style="max-width: 100%; height: auto; border-radius: 10px; margin: 20px 0;">
+                    <img src="pic1.jpg" alt="Ảnh 2" style="max-width: 100%; height: auto; border-radius: 10px; margin: 20px 0;">
+                </div>
+
+                <div class="letter-footer">
+                    <p>Từ trái tim,<br><span id="senderName">Hoàng Dương</span></p>
+                </div>
+
+                <!-- Nút đóng thư -->
+                <button id="closeButton" class="close-btn">Đóng Thư</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
